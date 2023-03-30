@@ -1,0 +1,12 @@
+
+
+<!-- Napravbiti dodavenje nobvog kursa -->
+<h2>Lista kurseva:</h2>
+<input [(ngModel)]="course" (keyup.enter)="onKeyup()" type="text">
+<button class="btn btn-primary" (click)="onClick($event)">Add</button>
+
+<table>
+    <tr *ngFor="let x of array">
+        <td><h2>{{x}}</h2></td>
+    </tr>
+</table>

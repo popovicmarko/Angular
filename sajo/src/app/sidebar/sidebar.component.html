@@ -1,0 +1,10 @@
+
+<div class="updateImg">  
+    <h2>IZMENA SLIKE</h2>
+    <img [src]="imageUrl" [(ngModel)]="images" width="250px" height="auto"><br>
+    <input  #slika type="text" (keyup.enter)="onSave(slika)" />
+    <button class="btn btn-primary"  (click)="onSave(slika)">SNIMI</button>
+    <h3></h3>
+</div>
+
+.

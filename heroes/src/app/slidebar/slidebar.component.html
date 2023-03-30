@@ -1,0 +1,25 @@
+<h2>slidebar works!</h2>
+<img [src] = "imageUrl" width="150px" height="150px">
+
+
+
+<!-- <button class="btn btn-primary" [style.bacgroundColor]="isActive?'blue':'red'">Snimi</button> -->
+
+<input [(ngModel)]="ime" (keyup.enter)="onKeyup()" type="text" />
+
+<div (click)="onDivClick()">
+    <button class="btn btn-primary" [class.active]="isActive" (click)="onSave($event)">Snimi</button>
+    <p>Ja sam div</p>
+</div>
+
+<!-- <input #ime (keyup.enter)="onKeyup(ime)" type="text" /> -->
+<p>{{ime | short: 4 }}</p>
+<p>{{prosek | number: '1.0-2' }}</p>
+<div class="add-course">
+    <h2>Add Corse</h2>
+    <input [(ngModel)]="ime" (keyup.enter)="onKeyup()" type="text" />
+    <button class="btn btn-primary" [class.active]="isActive" (click)="onSave($event)">Add</button>
+</div>
+
+
+

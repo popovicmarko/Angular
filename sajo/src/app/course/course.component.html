@@ -1,0 +1,13 @@
+<div class="add-course">
+    <h3>DODAVANJE KURSEVA</h3>
+    <input #ime type="text" (keyup.enter)="enterClick(ime)" />
+    <button type="button" (click)="onClick(ime)" class="btn btn-primary">DODAJ</button>
+    <table>
+        <tr *ngFor="let x of array">
+            <td class="course-name"><h3>{{x}}</h3></td>
+        </tr>
+    </table>
+
+
+</div>
+

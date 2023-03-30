@@ -1,0 +1,26 @@
+.cointener{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    grid-template-columns: 2fr 8fr;
+    grid-template-areas: 
+    " navigator navigator "
+    " course slidebar ";
+}
+.course{
+    grid-area: course;
+    border: solid 1pc solid;
+}
+.navigator{
+    grid-area: navigator;
+    display: flex;
+    gap: 1rem;
+    border: solid 1px black;
+}
+.slidebar{
+    grid-area: slidebar;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px black;
+}
